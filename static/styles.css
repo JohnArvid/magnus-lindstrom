@@ -1,12 +1,50 @@
+/*
+
+Global styles
+
+*/
+
 * {
-  background-color: black;
+  background-color: #231f20;
   color: white;
+  font-family: 'EB Garamond', serif;
 }
 
+body {
+  max-width: 45em;
+  margin: 0 auto;
+}
+
+#content {
+  display: flex;
+}
+
+/*
+
+IMG styles
+
+*/
 .imgWrapper {
   width: 20em;
 }
 
 .imgWrapper img {
   width: 100%;
+}
+
+/*
+
+Typography
+
+*/
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+.main-header {
+  font-size: 6em;
 }
