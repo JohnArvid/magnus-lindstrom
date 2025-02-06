@@ -13,10 +13,35 @@ Global styles
 body {
   max-width: 45em;
   margin: 0 auto;
+  padding: 3em 1em;
 }
 
-#content {
+.page {
+  min-height: 100vh;
   display: flex;
+}
+
+@media screen and (max-width:600px) {
+  .page{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.page > * {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#page-2 {
+  border: 1px solid red;;
+}
+
+.left {
+  padding-right: 4em;
 }
 
 /*
@@ -43,8 +68,35 @@ h2,
 h3,
 h4 {
   font-weight: 400;
+  margin: 0;
+}
+
+p{
+  font-style: italic;
+}
+#email{
+  text-align: center;
+  font-size: 1em;
+}
+a {
+  text-decoration: none;
 }
 
 .main-header {
-  font-size: 6em;
+  font-size: 2.5em;
 }
+
+footer {
+  text-align: center;
+  font-size: .7em;
+}
+
+@media screen and (max-width: 700px) {
+  .main-header {
+    font-size: 2em;
+  }
+  .secondary-header {
+    font-size: 1.3em;
+  }
+}
+
